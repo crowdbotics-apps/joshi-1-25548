@@ -28,17 +28,23 @@ export class Blank extends React.Component {
   }
   render = () => (
     <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button
+        title="Press me!"
+        style={styles.Button_3}
+        onPress={() => alert("Pressed!")}
+      />
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Button_3: {} })
+const styles = StyleSheet.create({ View_1: {}, Button_3: { color: "#faf4f4" } })
 
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
